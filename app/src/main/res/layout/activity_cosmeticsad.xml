@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:paddingTop="20dp"
+    tools:context=".adapter.cosmeticsad">
+
+    <ImageView
+        android:id="@+id/itemimg"
+        android:layout_width="122dp"
+        android:layout_height="109dp"
+        android:src="@drawable/ic_account" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemnam"
+        android:layout_toRightOf="@+id/itemimg"
+        android:hint="name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/itemcos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemnam"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/itemimg"
+        android:background="#FFFFFF"
+        android:hint="sh 2000" />
+
+    <Button
+        android:id="@+id/btnbuy"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/itemnam"
+        android:background="@drawable/roundcorner"
+        android:text="BUY" />
+</RelativeLayout>
